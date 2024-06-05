@@ -37,4 +37,3 @@ INSERT INTO MATERIEL (nomMateriel, typeMateriel, descMateriel) VALUES
 #------------------------------------------------------------
 
 SELECT * FROM MATERIEL;
-SELECT COUNT(DISTINCT idMateriel) FROM MATERIEL;

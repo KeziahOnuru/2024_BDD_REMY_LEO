@@ -20,7 +20,7 @@ CREATE TABLE RESERVATION(
 	CONSTRAINT RESERVATION_UTILISATEUR_FK FOREIGN KEY (idUtilisateur) REFERENCES UTILISATEUR(idUtilisateur)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE,
-	CONSTRAINT RESERVATION_MATERIEL0_FK FOREIGN KEY (idMateriel) REFERENCES MATERIEL(idMateriel)
+	CONSTRAINT RESERVATION_MATERIEL_FK FOREIGN KEY (idMateriel) REFERENCES MATERIEL(idMateriel)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 )ENGINE=InnoDB;
@@ -35,11 +35,11 @@ INSERT INTO RESERVATION (dateDebut, dateFin, idUtilisateur, idMateriel) VALUES
 ('2024-03-21', '2024-06-30', 22106768, 8),
 ('2022-09-01', '2026-08-28', 22003820, 3),
 ('2023-09-01', '2024-06-30', 22310344, 2),
-('2023-09-01', '2024-06-30', 22310344, 10);
+('2023-09-01', '2024-06-30', 22310344, 10),
+('2024-05-24', '2024-07-24', 22311734, 6);
 
 #------------------------------------------------------------
 # Vérification de la bonne insertion du contenu dans la table RESERVATION
 #------------------------------------------------------------
 
 SELECT * FROM RESERVATION;
-SELECT COUNT(DISTINCT idReservation) FROM RESERVATION;

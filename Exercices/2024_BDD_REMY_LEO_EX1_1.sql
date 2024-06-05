@@ -39,4 +39,3 @@ INSERT INTO UTILISATEUR (idUtilisateur, nomUtilisateur, prenomUtilisateur, email
 #------------------------------------------------------------
 
 SELECT * FROM UTILISATEUR;
-SELECT COUNT(DISTINCT idUtilisateur) FROM UTILISATEUR;
